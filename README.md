@@ -23,16 +23,16 @@ combination key `ctrl ]` : goto where that the cursor to the function or variety
 when you want to know where to call the function or variety, end the command "cs f e keyword_you_want"
 
 ## terminal 
-### ag: search the key world 
+`ag` search the key world 
 `ctrl r` search the command when you use in the history 
 
 ## terminator 
 split screen for terminal 
 `ctrl shit o`, `ctrl shit e` to split screen 
 
-#memory check
-`valgrind --leak-check=full`  
+## memory check  
+`valgrind --leak-check=full your-program`  
 
 
-#copyright   
+## copyright   
 MIT by Jim
