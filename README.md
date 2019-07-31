@@ -1,3 +1,13 @@
+## zsh
+
+## terminator
+
+## markdown 
+
+## terminal 
+`ag` search the key world 
+`ctrl r` search the command when you use in the history 
+
 ## gvim 
 ### combinationkey 
 `ctrl o` go front  
@@ -21,10 +31,6 @@ Execute the script `update_db.sh`, then will product some files, and open the gv
 you can use the shortcut key to search the code and go where you want.
 combination key `ctrl ]` : goto where that the cursor to the function or variety
 when you want to know where to call the function or variety, end the command "cs f e keyword_you_want"
-
-## terminal 
-`ag` search the key world 
-`ctrl r` search the command when you use in the history 
 
 ## terminator 
 split screen for terminal 
