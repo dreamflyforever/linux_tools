@@ -1,6 +1,10 @@
+[中文页](README_zh.md)  
+
 ## zsh
+install: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ## terminator
+安装: sudo apt-get install terminator
 
 ## markdown 
 
@@ -17,7 +21,9 @@ enter command `vsp .` virtical split screen
 press `ctrl v` and `hjkl` to select region  
 `u` cancel  
 `ctrl z` opposite cancel  
-`~/.vimrc`: 
+`jklh` direction key  
+
+### ~/.vimrc: 
 ```bash 
 colorscheme evening   
 imap jj <esc>  #enter jj will switch edit mode to command mode  
@@ -27,10 +33,12 @@ set autoindent
 ```
 
 ## update_db.sh
-Execute the script `update_db.sh`, then will product some files, and open the gvim, enter the command`cs add cscope.out`,  
-you can use the shortcut key to search the code and go where you want.  
+Execute the script `update_db.sh`, then will product some files, and open the gvim, 
+enter the command`cs add cscope.out`, you can use the shortcut key to search the 
+code and go where you want.  
 combination key `ctrl ]` : goto where that the cursor to the function or variety  
-when you want to know where to call the function or variety, end the command "cs f e keyword_you_want"
+when you want to know where to call the function or variety, end the command 
+"cs f e keyword_you_want"
 
 ## terminator 
 split screen for terminal  
@@ -38,6 +46,9 @@ split screen for terminal
 
 ## memory check  
 `valgrind --leak-check=full your-program`  
+
+## build HTTP server
+`python -m SimpleHTTPServer`
 
 ## copyright   
 MIT by Jim
