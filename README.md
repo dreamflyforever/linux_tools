@@ -48,7 +48,11 @@ split screen for terminal
 `valgrind --leak-check=full your-program`  
 
 ## build HTTP server
-`python -m SimpleHTTPServer`
+python2 : `python -m SimpleHTTPServer`
+python3 : `python3 -m http.server`
+
+## web get quickly 
+axel -n 10 -o /tmp/ http://soft.vpser.net/lnmp/lnmp0.7-full.tar.gz
 
 ## copyright   
 MIT by Jim
