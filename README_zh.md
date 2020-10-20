@@ -53,11 +53,15 @@ cscope -Rbq -i cscope.files
 ctags -R --exclude=.git
 ```
 ## 创建简单服务器
-`python -m SimpleHTTPServer`  
+python2 : `python -m SimpleHTTPServer`
+python3 : `python3 -m http.server`
 方便传送文件
 
 ## memory check
 `valgrind --leak-check=full your-program` 检查代码内存泄露
+
+## 串口工具
+sudo miniterm /dev/ttyUSB0 115200  
 
 ## 版权
 MIT by Jim

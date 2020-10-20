@@ -54,5 +54,8 @@ python3 : `python3 -m http.server`
 ## web get quickly 
 axel -n 10 -o /tmp/ http://soft.vpser.net/lnmp/lnmp0.7-full.tar.gz
 
+## uart
+sudo miniterm /dev/ttyUSB0 115200  
+
 ## copyright   
 MIT by Jim
