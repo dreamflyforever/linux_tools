@@ -57,5 +57,8 @@ axel -n 10 -o /tmp/ http://soft.vpser.net/lnmp/lnmp0.7-full.tar.gz
 ## uart
 sudo miniterm /dev/ttyUSB0 115200  
 
+## search line for string  > 80 char
+awk 'length>80' file
+
 ## copyright   
 MIT by Jim

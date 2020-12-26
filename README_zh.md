@@ -63,5 +63,11 @@ python3 : `python3 -m http.server`
 ## 串口工具
 sudo miniterm /dev/ttyUSB0 115200  
 
+## 搜索文件里面某一行字符大于80个字节
+awk 'length>80'  file
+
+# 每行按空格或TAB分割，输出文本中的1、4项
+ $ awk '{print $1,$4}' file
+
 ## 版权
 MIT by Jim
