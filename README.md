@@ -31,7 +31,6 @@ set hlsearch
 set incsearch  
 set autoindent  
 ```
-
 ## update_db.sh
 Execute the script `update_db.sh`, then will product some files, and open the gvim, 
 enter the command`cs add cscope.out`, you can use the shortcut key to search the 
@@ -59,6 +58,9 @@ sudo miniterm /dev/ttyUSB0 115200
 
 ## search line for string  > 80 char
 awk 'length>80' file
+
+## search big file
+find . -type f -size +800M  -print0 | xargs -0 du -h | sort -nr
 
 ## copyright   
 MIT by Jim
