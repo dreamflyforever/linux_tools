@@ -62,5 +62,11 @@ awk 'length>80' file
 ## search big file
 find . -type f -size +800M  -print0 | xargs -0 du -h | sort -nr
 
+## audio
+tinycap /sdcard/rec.wav -D 0 -d 0 -c 2 -r 44100 -b 16 -p 1024 -n 3
+tinyplay /data/audio/Steppin_Out.wav   -D 0 -d 0  -n 3
+amix "IN2 Boost"
+amix "ADC Capture Volume"
+
 ## copyright   
 MIT by Jim
