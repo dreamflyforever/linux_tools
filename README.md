@@ -69,5 +69,12 @@ tinyplay /data/audio/Steppin_Out.wav   -D 0 -d 0  -n 3
 amix "IN2 Boost"
 amix "ADC Capture Volume"
 
+## wifi config by command
+sudo iw dev wlan0 scan | less (ps: wlan is your PC wireless card name) 
+wpa_passphrase Pd_robot_5G pdpdpdpd >  /etc/wpa_supplicant.conf 
+wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -B 
+dhclient wlan0 
+ip addr
+
 ## copyright   
 MIT by Jim
