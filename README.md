@@ -76,5 +76,9 @@ wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -B
 dhclient wlan0 
 ip addr
 
+## rj45 directly connect
+ifconfig eth0 192.168.0.1 netmask 255.255.255.0
+ping -I eth0 another_compute_ip
+
 ## copyright   
 MIT by Jim
