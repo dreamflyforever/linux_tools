@@ -80,5 +80,15 @@ ip addr
 ifconfig eth0 192.168.0.1 netmask 255.255.255.0
 ping -I eth0 another_compute_ip
 
+## usb speed test 
+echo "read from SSD....." 
+sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches" 
+sudo dd if=/media/jim/your_ssd/big_file of=/home/big_file bs=1024576 count=1024 
+sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches" 
+
+echo "write to SSD....." 
+dd if=~/workspace/big_file of=/media/jim/your_ssd/big_file bs=1M count=1024 
+sudo rm /home/big_file 
+
 ## copyright   
 MIT by Jim
