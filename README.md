@@ -90,5 +90,8 @@ echo "write to SSD....."
 dd if=~/workspace/big_file of=/media/jim/your_ssd/big_file bs=1M count=1024 
 sudo rm /home/big_file 
 
+## read cpu temperature
+watch -n 1 cat /sys/class/thermal/thermal_zone1/temp 
+
 ## copyright   
 MIT by Jim
