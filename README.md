@@ -93,5 +93,9 @@ sudo rm /home/big_file
 ## read cpu temperature
 watch -n 1 cat /sys/class/thermal/thermal_zone1/temp 
 
+## iperf test
+server: iperf -s 
+client: iperf -c  $1 -p 5001 -i 1 -t 1000000
+
 ## copyright   
 MIT by Jim
