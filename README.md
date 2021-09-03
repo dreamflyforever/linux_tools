@@ -97,5 +97,8 @@ watch -n 1 cat /sys/class/thermal/thermal_zone1/temp
 server: iperf -s 
 client: iperf -c  $1 -p 5001 -i 1 -t 1000000
 
+## player audio pcm
+ffplay -f s16le -ar 16000 -ac 1 -autoexit sound.pcm
+
 ## copyright   
 MIT by Jim
