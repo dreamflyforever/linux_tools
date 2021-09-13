@@ -100,5 +100,8 @@ client: iperf -c  $1 -p 5001 -i 1 -t 1000000
 ## player audio pcm
 ffplay -f s16le -ar 16000 -ac 1 -autoexit sound.pcm
 
+## self-start
+gnome-session-properties
+
 ## copyright   
 MIT by Jim
