@@ -103,5 +103,9 @@ ffplay -f s16le -ar 16000 -ac 1 -autoexit sound.pcm
 ## self-start
 gnome-session-properties
 
+## sshd
+sudo apt install openssh-server
+sudo /etc/init.d/ssh start
+
 ## copyright   
 MIT by Jim
