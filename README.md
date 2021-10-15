@@ -107,5 +107,8 @@ gnome-session-properties
 sudo apt install openssh-server
 sudo /etc/init.d/ssh start
 
+## audio change hz
+ffmpeg -i input -ac 1 -ar 48000 -y output
+
 ## copyright   
 MIT by Jim
