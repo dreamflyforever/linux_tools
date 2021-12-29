@@ -110,5 +110,8 @@ sudo /etc/init.d/ssh start
 ## audio change hz
 ffmpeg -i input -ac 1 -ar 48000 -y output
 
+## get linux stand library souce code
+apt-get source libasound2-dev
+
 ## copyright   
 MIT by Jim
