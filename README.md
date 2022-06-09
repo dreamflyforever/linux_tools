@@ -113,5 +113,8 @@ ffmpeg -i input -ac 1 -ar 48000 -y output
 ## get linux stand library souce code
 apt-get source libasound2-dev
 
+## tcp capture text
+sudo tshark -Y 'websocket'  -V -T text
+
 ## copyright   
 MIT by Jim
