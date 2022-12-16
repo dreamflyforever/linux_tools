@@ -116,5 +116,9 @@ apt-get source libasound2-dev
 ## tcp capture text
 sudo tshark -Y 'websocket'  -V -T text
 
+## search system lib & head file
+pkg-config --libs opencv
+pkg-config --cflags opencv
+
 ## copyright   
 MIT by Jim
