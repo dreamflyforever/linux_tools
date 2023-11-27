@@ -71,3 +71,4 @@ awk 'length>80'  file
 
 ## 版权
 MIT by Jim
+du ./* -sh

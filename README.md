@@ -120,5 +120,25 @@ sudo tshark -Y 'websocket'  -V -T text
 pkg-config --libs opencv
 pkg-config --cflags opencv
 
+## ffplay camera
+ffplay  -f v4l2 -video_size 1600x1200  -framerate 30  -pixel_format yuyv422  /dev/video0
+ffmpeg -f v4l2 -video_size 1920x1080 -framerate 30 -input_format h264 -i /dev/video0 -c copy output.mp4
+v4l2-ctl -d /dev/video0 --list-formats-ext
+
+## ssh login
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.235.22
+
+## nvidia
+nvcc -V  
+nvidia-smi
+
+## rtsp build
+server: python3 stream.py --device_id 4 --fps 30 --image_width 640 --image_height 480 --port 8554 --stream_uri /video_stream
+client: ffplay  rtsp://10.1.2.68:8554/video_stream    
+ffmpeg -i rtsp://10.1.2.68:8554/video_stream -c copy output.mp4 
+python detect.py --weights yolov5s.pt --source  rtsp://10.1.2.68:8554/video_stream​
+
+## 'perf top -p' to test program any part 
+
 ## copyright   
 MIT by Jim
