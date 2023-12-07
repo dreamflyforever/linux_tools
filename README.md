@@ -124,6 +124,7 @@ pkg-config --cflags opencv
 ffplay  -f v4l2 -video_size 1600x1200  -framerate 30  -pixel_format yuyv422  /dev/video0
 ffmpeg -f v4l2 -video_size 1920x1080 -framerate 30 -input_format h264 -i /dev/video0 -c copy output.mp4
 v4l2-ctl -d /dev/video0 --list-formats-ext
+ffplay -f rawvideo -pixel_format rgb24 -video_size 640x400 color_32.rgb888
 
 ## ssh login
 ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.235.22
