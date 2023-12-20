@@ -141,5 +141,8 @@ python detect.py --weights yolov5s.pt --source  rtsp://10.1.2.68:8554/video_stre
 
 ## 'perf top -p' to test program any part 
 
+## otool -L 
+check library in macos
+
 ## copyright   
 MIT by Jim
