@@ -144,5 +144,14 @@ python detect.py --weights yolov5s.pt --source  rtsp://10.1.2.68:8554/video_stre
 ## otool -L 
 check library in macos
 
+## docker 
+docker run -it -v /home/haha/下载:/share microsoft/dotnet:latest /bin/bash
+
+## git cloe fast
+git clone http://githubfast.com/dreamflyforever/libv4l2
+
+## sed command
+sed -i "s/^2/4/g" `ls`
+
 ## copyright   
 MIT by Jim
