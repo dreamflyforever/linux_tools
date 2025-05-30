@@ -153,5 +153,7 @@ git clone http://githubfast.com/dreamflyforever/libv4l2
 ## sed command
 sed -i "s/^2/4/g" `ls`
 
+## realpath file
+
 ## copyright   
 MIT by Jim
